@@ -4,13 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar with Logo and Menu</title>
+  <title>My Portofolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,300;0,500;1,300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Kanit&family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,300;0,500;1,300&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+  <!-- navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand " href="#">
@@ -38,27 +50,95 @@
       </div>
     </div>
   </nav>
-
-  <section>
-    <div class="container">
-      <div class="row pt-4">
-        <div class="col-lg-6 hero-img d-flex flex-column justify-content-center align-items-center">
-          <img src="./img/home.svg" class="img-fluid animated moveUpDown" width="800" height="800" alt="">
-        </div>
-        <div class="col-lg-6 p-5 d-flex flex-column justify-content-center align-items-start">
-          <h2>Hai 👋 Everyone </h2>
-          <div id="typing-container">
-            <h1 id="typing-text"></h1>
+  <!-- akhir navbar -->
+  <!-- content -->
+  <main class="content">
+    <!-- home -->
+    <section>
+      <div class="container">
+        <div class="row pt-5 justify-content-center">
+          <div class="col-md-4 d-flex flex-column justify-content-center align-items-start" data-aos="zoom-in"
+            data-aos-duration="1000">
+            <p class="text-hai">Hai 👋 From</p>
+            <h1 class="title-home">I Ketut Divta Suryawan </h1>
+            <div id="typing-container">
+              <p id="typing-text"></p>
+            </div>
+            <p class="intro-junior">
+              I am a beginner in the web world, enthusiastic about creating interactive and user-friendly websites
+            </p>
+            <div class="py-2">
+              <a href="#about" class="btn btn-outline-info rounded-5 px-4 py-2">More Info</a>
+            </div>
           </div>
-          <div class="py-2">
-            <a href="#about" class="btn btn-outline-info  rounded-5 px-4 py-2 ">More Info</a>
-          </div>
 
+          <div class="col-md-5 d-flex justify-content-center align-items-center" data-aos="fade-left">
+            <div class="bg-home rounded-circle">
+              <img src="./img/bg-home.png" class="img-fluid rounded-circle" alt="">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- end home -->
+    <!-- about -->
+    <section class="pt-5">
+      <div class="container pt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="">
+              <div class="row no-gutters">
+                <div class="col-md-4 text-center">
+                  <img src="./img/about.png" class="card-img img-fluid rounded-circle  img-about" alt="...">
+                  <div class="d-flex flex-column align-items-center mt-3">
+                    <h3 class="title-about">Connect With Me</h3>
+                    <div class="d-flex">
+                      <ul class="list-unstyled d-flex">
+                        <li class="mr-3"><a href=""><i class="fab fa-instagram text-danger fa-2x"></i></a></li>
+                        <li class="mr-3"><a href=""><i class="fab fa-facebook text-primary fa-2x"></i></a></li>
+                        <li class="mr-3"><a href=""><i class="fab fa-github text-dark fa-2x"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-8">
+                  <div class="card">
+                    <h2 class="card-title title-about" align="center">About Me</h2>
+                    <div class="card-body">
+                      <div>
+                        <h2>Hallo I'm I Ketut Divta Suryawan</h2>
+                        <h3>A Student Residing in the City of Palu.</h3>
+                      </div>
+                      <div>
+                        <p class="intro-junior">As a novice in the realm of web development, I am excited to embark on
+                          the journey
+                          of crafting interactive and
+                          user-friendly websites that not only showcase my growing skills but also provide valuable and
+                          enjoyable
+                          online
+                          experiences for users.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end about -->
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./js/main.js"></script>
 </body>
 

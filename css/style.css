@@ -47,14 +47,23 @@
   border-right: 0.15em solid #000;
   /* Simulasi cursor blinking */
 }
-
+.title-home {
+  font-family: "Kanit", sans-serif;
+  font-size: xx-large;
+  font-style: normal;
+  color: #007bff;
+}
 #typing-text {
   display: inline-block;
+  font-family: "Popins";
+  font-style: italic;
 }
 
-.hero-img {
-  background-color: #f5f5f5;
-  border-radius: 50%;
+.bg-home {
+  background-color: #e6e5e5;
+}
+.intro-junior {
+  font-family: "popins";
 }
 
 @keyframes moveUpDown {
@@ -68,6 +77,12 @@
   }
 }
 
-.moveUpDown {
-  animation: moveUpDown 2s infinite;
+/* about */
+.img-about {
+  background-color: #e6e5e5;
+}
+.title-about {
+  font-family: "kanit";
+  font-style: inherit;
+  color: #0091ff;
 }
