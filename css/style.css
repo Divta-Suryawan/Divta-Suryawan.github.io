@@ -55,12 +55,13 @@
 }
 #typing-text {
   display: inline-block;
-  font-family: "Popins";
-  font-style: italic;
+  font-family: "Kanit";
+  font-style: inherit;
 }
 
 .bg-home {
-  background-color: #e6e5e5;
+  background-image: url(/img/blob2.png);
+  background-size: cover;
 }
 .intro-junior {
   font-family: "popins";
@@ -82,7 +83,22 @@
   background-color: #e6e5e5;
 }
 .title-about {
-  font-family: "kanit";
-  font-style: inherit;
-  color: #0091ff;
+  color: #007bff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.title-deskripsi-about span {
+  color: #007bff;
+  font-family: kanit;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
