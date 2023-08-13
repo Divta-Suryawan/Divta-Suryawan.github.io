@@ -1,6 +1,6 @@
 // text in home
 const typingText = document.getElementById('typing-text');
-const texts = ["I'm Junior Web Developer 😃"];
+const texts = ["Junior Web Developer 😃"];
 let textIndex = 0;
 let charIndex = 0;
 let isErasing = false;

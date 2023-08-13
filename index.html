@@ -9,13 +9,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,300;0,500;1,300&display=swap"
-    rel="stylesheet">
+
   <link rel="stylesheet" href="./css/style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Kanit&family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,300;0,500;1,300&display=swap');
-  </style>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,7 +19,7 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg font-popins fixed-top">
     <div class="container">
       <a class="navbar-brand " href="#">
         <img src="./img/logo.png" alt="Logo" width="60" height="60">
@@ -35,13 +31,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
+            <a class="nav-link active" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Service</a>
+            <a class="nav-link active" href="#">My skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Portofolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">Contact </a>
@@ -50,24 +49,28 @@
       </div>
     </div>
   </nav>
-  <!-- akhir navbar -->
+  <!-- end navbar -->
   <!-- content -->
   <main class="content">
     <!-- home -->
-    <section class="home">
-      <div class="container">
+    <section class="home" id="home">
+      <div class="container pt-5 mt-5">
         <div class="row pt-2 justify-content-center">
-          <div class="col-md-4 d-flex flex-column justify-content-center align-items-start">
-            <p class="text-hai" data-aos="fade-up" data-aos-duration="400">Hai 👋 From</p>
-            <h1 class="title-home" data-aos="fade-up" data-aos-duration="600">I Ketut Divta Suryawan </h1>
-            <div id="typing-container" data-aos="fade-up" data-aos-duration="800">
+          <div class="col-md-5 d-flex flex-column justify-content-center align-items-start">
+            <p class="text-hai font-popins" data-aos="fade-up" data-aos-duration="400">Hallo Evryone 👋 <span
+                class="sky px-2">I'm</span>
+            </p>
+            <h1 class="title-home font-kanit sky" data-aos="fade-up" data-aos-duration="600">I Ketut Divta Suryawan
+            </h1>
+            <div id="typing-container " data-aos="fade-up" data-aos-duration="800">
               <p id="typing-text"></p>
             </div>
-            <p class="intro-junior" data-aos="fade-up" data-aos-duration="900">
-              I am a beginner in the web world, enthusiastic about creating interactive and user-friendly websites
-            </p>
+            <p class="intro-junior font-popins " data-aos="fade-up" data-aos-duration="900">
+              A Junior Web Developer who has just begun
+              my
+              career in the programming world </p>
             <div class="py-2" data-aos="fade-up" data-aos-duration="900">
-              <a href="#about" class="btn btn-outline-info rounded-5 px-4 py-2">More Info</a>
+              <a href="#about"><button class="btn-home font-popins rounded-5 px-4 py-2">More Info</button> </a>
             </div>
           </div>
 
@@ -84,75 +87,115 @@
     <!-- end home -->
     <!-- about -->
     <section class="pt-5">
-      <div class="container pt-3">
-        <h2 class="card-title title-about" align="center">About Me</h2>
-        <div class="row justify-content-center pt-5">
-          <div class="col-md-10">
-            <div class="">
-              <div class="row no-gutters">
-                <div class="col-md-4 text-center">
-                  <img src="./img/blob.png" class="img-fluid img" alt="">
-                  <div class="d-flex flex-column align-items-center mt-3">
-                    <h3 class="title-child">Connect With Me</h3>
-                    <div class="d-flex">
-                      <ul class="list-unstyled d-flex">
-                        <li class="mr-3"><a href=""><i class="fab fa-instagram text-danger fa-2x"></i></a></li>
-                        <li class="mr-3"><a href=""><i class="fab fa-facebook text-primary fa-2x"></i></a></li>
-                        <li class="mr-3"><a href=""><i class="fab fa-github text-dark fa-2x"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-8">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="title-deskripsi-about">
-                        <h5>Hallo I'm <span>I Ketut Divta Suryawan</span></h5>
-                      </div>
-                      <div>
-                        <p class="intro-junior">As a novice in the realm of web development, I am excited to embark on
-                          the journey
-                          of crafting interactive and
-                          user-friendly websites that not only showcase my growing skills but also provide valuable and
-                          enjoyable
-                          online
-                          experiences for users.</p>
-                      </div>
-                    </div>
-                    <div class="row container">
-                      <div class="col-md-5">
-                        <div class="education">
-                          <h2>Education</h2>
-                          <ul>
-                            <li>STudy</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="education">
-                          <h2>Education</h2>
-                          <ul>
-                            <li>STudy</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-
-
-              </div>
+      <div class="container ">
+        <div class="row justify-content-center ">
+          <h4 id="about" class="container col-md-10 card-title title-about font-kanit" data-aos="zoom-in"
+            data-aos-duration="600">
+            About Me</h4>
+          <div class="col-md-5">
+            <div class="pt-2" data-aos="fade-right" data-aos-duration="600">
+              <h6 class="font-kanit sky">Introductions</h6>
+              <p class="intro-junior font-popins">Hello, I'm Divta, a
+                Junior Web Developer who has just begun
+                my
+                career in the programming world. I have knowledge in HTML, CSS, JavaScript, and PHP, and have developed
+                experience with
+                frameworks like Laravel. I am very enthusiastic about creating engaging and interactive web experiences,
+                and I'm always open to
+                continue learning and further developing in this field.</p>
             </div>
-
+          </div>
+          <div class="col-md-5">
+            <div class="pt-2" data-aos="fade-left" data-aos-duration="600">
+              <h6 class=" font-kanit sky">Connect With Me</h6>
+              <p class="intro-junior font-popins">If you'd like to be
+                friends with me, you can reach out to me on my
+                social media below.</p>
+              <ul class=" list-unstyled d-flex gap-3 ">
+                <li><a href=" https://www.instagram.com/divta_div10/" class="nav-link"><i
+                      class="fa-brands fa-instagram fa-xl"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/ketut.divta" class="nav-link"><i
+                      class="fa-brands fa-facebook fa-xl"></i></a></li>
+                <li><a href="mailto:gitdivta@gmail.com" class="nav-link"><i class="fa-solid fa-envelope fa-xl"></i></a>
+                </li>
+                <li><a href="www.linkedin.com/in/divta-suryawan-b59060288" class="nav-link"><i
+                      class="fa-brands fa-linkedin fa-xl"></i></a></li>
+                <li><a href="https://github.com/Divta-Suryawan" class="nav-link"><i
+                      class="fa-brands fa-github fa-xl"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      </div>
     </section>
-
     <!-- end about -->
+    <!-- skils -->
+    <section id="skils">
+      <div class="container">
+        <div class="row justify-content-center pt-5">
+          <h4 id="about" class="col-md-10 container font-kanit d-flex  justify-content-center align-items-center">
+            My Skils</h4>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="card">
+                        <img src="./img/skils/html.png" class=" img-fluid " alt="...">
+                        <div class="card-body">
+                          <p>HTML</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="card">
+                        <img src="./img/skils/css.png" class=" img-fluid " alt="...">
+                        <div class="card-body">
+                          <p>HTML</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="card">
+                        <img src="./img/skils/js.png" class=" img-fluid " alt="...">
+                        <div class="card-body">
+                          <p>HTML</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="card">
+                        <img src="./img/skils/boosrtap.png" class=" img-fluid " alt="...">
+                        <div class="card-body">
+                          <p>HTML</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="card">
+                        <img src="./img/skils/tailwind.png" class=" img-fluid " alt="...">
+                        <div class="card-body">
+                          <p>HTML</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h2>Tech Stack</h2>
+              <p>This is the technology I often use for learning</p>
+            </div>
+          </div>
+
+        </div>
+
+    </section>
+    <!-- end dkils -->
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

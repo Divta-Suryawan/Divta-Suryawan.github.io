@@ -1,6 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Kanit&family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,300;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Kanit&family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap");
+
 *body {
   margin: 0;
   padding: 0;
+}
+
+/* font */
+.font-popins {
+  font-family: "Poppins", sans-serif;
+}
+.font-kanit {
+  font-family: "Kanit", sans-serif;
+}
+/* color */
+.sky {
+  color: #06b6d4;
 }
 
 /* navbar */
@@ -20,7 +35,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: #007bff;
+  color: #06b6d4;
   text-decoration: none;
 }
 
@@ -31,7 +46,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #0091ff;
+  background-color: #06b6d4;
   transition: width 0.3s;
 }
 
@@ -40,7 +55,8 @@
 }
 
 /* akhir navbar */
-/* deskripsi */
+/* home*/
+
 #typing-container {
   white-space: nowrap;
   overflow: hidden;
@@ -48,23 +64,33 @@
   /* Simulasi cursor blinking */
 }
 .title-home {
-  font-family: "Kanit", sans-serif;
   font-size: xx-large;
   font-style: normal;
-  color: #007bff;
 }
 #typing-text {
-  display: inline-block;
+  font-size: normal;
   font-family: "Kanit";
-  font-style: inherit;
-}
-
-.bg-home {
-  background-image: url(/img/blob2.png);
-  background-size: cover;
+  font-style: initial;
 }
 .intro-junior {
-  font-family: "popins";
+  font-size: 14px;
+  font-style: normal;
+  text-align: justify;
+  word-wrap: break-word;
+}
+.bg-home {
+  background-image: url(/img/bg-blob.svg);
+  background-size: cover;
+}
+.btn-home {
+  background-color: transparent;
+  border: 2px solid #06b6d4;
+  color: #06b6d4;
+  transition: opacity 0.5s ease-in-out;
+}
+.btn-home:hover {
+  color: white;
+  background-color: #06b6d4;
 }
 
 @keyframes moveUpDown {
@@ -79,19 +105,25 @@
 }
 
 /* about */
-.img-about {
-  background-color: #e6e5e5;
-}
-.title-about {
-  color: #007bff;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 .title-deskripsi-about span {
-  color: #007bff;
-  font-family: kanit;
+  color: #06b6d4;
 }
 
+.nav-link .fa-instagram:hover {
+  color: rgb(255, 0, 111);
+}
+.nav-link .fa-facebook:hover {
+  color: rgb(0, 38, 255);
+}
+.nav-link .fa-envelope:hover {
+  color: rgb(255, 0, 0);
+}
+.nav-link .fa-linkedin:hover {
+  color: rgb(0, 200, 255);
+}
+.nav-link .fa-github:hover {
+  color: rgb(66, 66, 77);
+}
 @keyframes fadeInUp {
   from {
     opacity: 0;
