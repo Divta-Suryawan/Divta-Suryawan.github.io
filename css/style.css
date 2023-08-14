@@ -134,3 +134,25 @@
     transform: translateY(0);
   }
 }
+
+/* skils */
+.card-skils {
+  box-shadow: 2px 5px 5px #06b6d4;
+  border-radius: 20px;
+}
+.skils-border {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.skils-border:hover {
+  box-shadow: 2px 5px 5px #06b6d4;
+}
+.p-skils {
+  transition: box-shadow 0.3s ease-in-out;
+  font-style: inherit;
+}
+.p-skils:hover {
+  color: #06b6d4;
+}
