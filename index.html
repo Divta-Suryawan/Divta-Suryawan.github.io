@@ -199,9 +199,62 @@
     <section id="portofolio">
       <div>
         <div class="row justify-content-center pt-5">
+          <h5 id="skils" class="font-kanit skils-title text-shadow d-flex  justify-content-center align-items-center">
+            Portofolio</h5>
+          <h3 id="skils"
+            class="font-kanit sky skils-title text-shadow d-flex  justify-content-center align-items-center">
+            My Project</h3>
+          <div class="col-md-10">
+            <swiper-container class="mySwiper" init="false">
+              <swiper-slide class="pb-3">
+                <img src="./img/portofolio/siasu.jpg" alt="Gambar Slide 1">
+                <h6 class="font-kanit sky p-1">Sistem Informasi Arsip </h6>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </swiper-slide>
+              <swiper-slide class="pb-3">
+                <img src="./img/portofolio/cetak-surat.jpg" alt="Gambar Slide 1">
+                <h6 class="font-kanit sky p-1">Sistem E-Surat </h6>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </swiper-slide>
+              <swiper-slide class="pb-3">
+                <img src="./img/portofolio/pena.jpg" alt="Gambar Slide 1">
+                <h6 class="font-kanit sky p-1">Web Profile UKM PENA</h6>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end portofolio -->
+    <!-- footer -->
+    <section id="portofolio">
+      <div>
+        <div class="row justify-content-center pt-5">
           <h3 id="skils" class="font-kanit skils-title text-shadow d-flex  justify-content-center align-items-center">
             Portofolio</h3>
-
+          <div class="col-md-10">
+            <swiper-container class="mySwiper" init="false">
+              <swiper-slide>
+                <img src="./img/portofolio/siasu.jpg" alt="Gambar Slide 1">
+                <h3>Slide 1</h3>
+                <p>Deskripsi Slide 1</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./img/portofolio/siasu.jpg" alt="Gambar Slide 1">
+                <h3>Slide 1</h3>
+                <p>Deskripsi Slide 1</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./img/portofolio/siasu.jpg" alt="Gambar Slide 1">
+                <h3>Slide 1</h3>
+                <p>Deskripsi Slide 1</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </swiper-slide>
+            </swiper-container>
+          </div>
         </div>
       </div>
     </section>
@@ -213,6 +266,33 @@
     AOS.init();
   </script>
   <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+  <script>
+    const swiperEl = document.querySelector('swiper-container')
+    Object.assign(swiperEl, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+    swiperEl.initialize();
+  </script>
 </body>
 
 </html>
